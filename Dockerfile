@@ -14,7 +14,6 @@ RUN npm install
 COPY . .
 
 # Apri la porta 3000 per permettere la comunicazione
-EXPOSE 3000
-
+EXPOSE 3001
 # Avvia i comandi
 CMD ["node", "app.js"]

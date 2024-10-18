@@ -48,5 +48,5 @@ docker-build-and-push:
       context: .
       file: Dockerfile
       push: true 
-      tags: docker push taranis100/its-prova:taranis100
+      tags: taranis100/its-prova:tagname 
       
