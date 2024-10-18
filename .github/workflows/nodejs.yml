@@ -28,10 +28,10 @@ jobs:
       - run: npm test
 
 
-docker-build-and-push:
- needs: build
- runs-on: ubuntu-latest
- if: github.ref == 'ref/heads/main'
+  docker-build-and-push:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'ref/heads/main'
 
  steps:
   - uses: actions/checkout@v2
